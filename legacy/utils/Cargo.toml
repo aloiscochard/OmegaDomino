@@ -1,0 +1,16 @@
+[package]
+name = "anna-utils"
+version = "0.0.0"
+authors = ["Anonymous"]
+build = "build.rs"
+
+[dependencies]
+bincode           = "0.8"
+chrono            = "0.3"
+env_logger        = "0.4"
+image             = "0.23"
+log               = "0.3"
+rand               = "0.5"
+serde             = "1.0"
+serde_derive      = "1.0"
+x11               = "2.18"

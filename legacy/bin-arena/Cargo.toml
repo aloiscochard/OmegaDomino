@@ -1,0 +1,26 @@
+[package]
+name = "anna-arena"
+version = "0.0.0"
+authors = ["Anonymous"]
+
+[dependencies]
+ctrlc                     = "3.0"
+env_logger                = "0.4"
+log                       = "0.3"
+rand                      = "0.5"
+rayon                     = "0.8"
+redis                     = "0.13.0"
+nnet                      = { path = "../nnet" }
+anna-eval                 = { path = "../eval" }
+anna-learning             = { path = "../learning" }
+anna-simulation           = { path = "../simulation" }
+anna-model                = { path = "../model" }
+anna-utils                = { path = "../utils" }
+
+[[bin]]
+name = "train"
+path = "src/bin/train.rs"
+
+[[bin]]
+name = "battle"
+path = "src/bin/battle.rs"

@@ -1,0 +1,25 @@
+[package]
+name = "anna-learning"
+version = "0.0.0"
+authors = ["Anonymous"]
+
+[dependencies]
+bincode                   = "0.8"
+cpuprofiler               = "0.0.3"
+ctrlc                     = "3.1"
+rand                      = "0.5"
+rayon                     = "0.8"
+env_logger                = "0.4"
+log                       = "0.3"
+redis                     = "0.13.0"
+serde                     = "1.0"
+serde_derive              = "1.0"
+nnet                   = { path = "../nnet" }
+anna-model             = { path = "../model" }
+anna-simulation        = { path = "../simulation" }
+anna-eval              = { path = "../eval" }
+anna-utils             = { path = "../utils" }
+
+[[bin]]
+name = "snet-train"
+path = "src/bin/snet_train.rs"

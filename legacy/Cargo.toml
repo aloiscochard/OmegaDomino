@@ -1,0 +1,16 @@
+[workspace]
+members = [
+  "bin-arena",
+  "bin-player",
+  "eval",
+  "model",
+  "learning",
+  "simulation",
+  "utils",
+  "vision",
+
+  "nnet",
+]
+
+[profile.release]
+debug = true

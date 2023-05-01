@@ -1,0 +1,15 @@
+[package]
+name    = "anna-simulation"
+version = "0.0.0"
+authors = ["Anonymous"]
+
+[dependencies]
+chrono                 = "0.3"
+env_logger             = "0.4"
+log                    = "0.3"
+num-traits             = "0.1"
+rand                   = "0.5"
+rayon                  = "0.8"
+anna-eval              = { path = "../eval" }
+anna-model             = { path = "../model" }
+anna-utils             = { path = "../utils" }
